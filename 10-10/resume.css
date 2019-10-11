@@ -1,0 +1,164 @@
+body {
+    margin: 0;
+    background-color: #313030;
+    
+}
+h2, h1, h3, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* 0 auto give 0 margin top and bottom and spreads the excess around left and right so things are centered */
+.medContainer { 
+    max-width: 800px;
+    margin: 0 auto; 
+    padding: 2em;
+}
+
+.padding {
+    padding-bottom: 15px; 
+}
+
+.gray {
+    background-color:#3B3939;
+}
+
+.darkGray {
+    background-color: #313030;
+}
+
+.textWhite {
+    color: white;
+}
+
+.textBlue {
+    color: lightblue;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.longLine {
+    border: 1px solid lightblue;
+    width: 60px;
+    margin: 0;
+}
+
+.shortLine {
+    border: 1px solid lightblue;
+    width: 30px;
+}
+
+.floatLeft {
+    float:left;
+}
+
+.aAndMoPic {
+    width: 150px;
+    height: 150px;
+    border: 2px solid lightblue;
+    float: right;
+    border-radius: 50%;
+}
+
+.btn {
+    background-color: lightblue;
+    color: #312F2F;
+    border-radius: 5px; 
+    line-height: 1em;
+    height: 40px;
+    width: 90px; 
+}   
+
+#resumeBtn {
+    color: #312F2F; 
+}
+
+#emailBtn {
+    background-color: #312F2F;
+    border: 2px solid lightblue;
+    color: lightblue;
+    margin: 0.5em;  
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+}
+
+.clear {
+    clear: both;
+}
+
+.pictures {
+   width: 100%;
+}
+
+.hover-container {
+    position: relative;
+  }
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #312F2F;
+  }
+  
+  .overlay:hover {
+    opacity: 0.75;
+  }
+
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.noWrap {
+    flex-wrap: nowrap!important;
+}
+
+.center {
+    align-content: center;
+}
+
+.line-height {
+    line-height: 1em;
+}
+
+.centerBlock {
+    margin: 0 auto;
+}
+
+.icon {
+    color: #9A9898;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    .noWrap {
+        flex-direction: column;
+    }
+    .pictures {
+        width: 95%;
+        margin-top: 25%;
+     }
+     .shortLine {
+         display: none;
+     }
+  }
